@@ -1,131 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neel Troeger</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-    <script>
-        // Function to simulate typing effect for the title
-        function typeTitle(title, index) {
-            document.title = title.substring(0, index);
-            if (index < title.length) {
-                setTimeout(function () {
-                    typeTitle(title, index + 1);
-                }, 100); // Adjust the typing speed by changing the timeout value
-            }
-        }
-
-        // Call the function when the window is loaded
-        window.onload = function () {
-            var originalTitle = document.title; // Store the original title
-            document.title = ""; // Set an empty title initially
-            typeTitle(originalTitle, 0); // Start the typing effect
-        };
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description"
+    content="Neel Troeger — software development, AI applications, data analysis, and computer science projects.">
+  <title>Neel Troeger | Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <nav class="wrap nav" aria-label="Main navigation">
+    <a class="brand" href="#top">NT<span>.</span></a>
+    <div class="navlinks">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/ywxn" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/ntroeger" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </div>
+  </nav>
 
-    <header style="background-color: #333; color: #fff; text-align: center; padding: 30px;">
-        <h1 style="font-size: 2em; margin-bottom: 10px;">Neel Troeger</h1>
-        <h3 style="font-size: 1.2em; margin-bottom: 15px;">Computer Science and Economics Major at Whitman College</h3>
-        <p style="font-size: 1em; margin-bottom: 5px;">troegern@whitman.edu | 503-839-1807</p>
-        <p style="font-size: 1em;">Welcome to my portfolio! Here are some of the projects I've worked on for class and outside.</p>
-    </header>    
+  <main id="top" tabindex="-1">
+    <header class="wrap hero">
+      <div class="eyebrow">Software development · AI applications · Data</div>
+      <h1>Hi, I’m Neel.<br><span class="gradient">I build useful software.</span></h1>
+      <p class="intro">I’m a computer science and economics graduate interested in building reliable software,
+        AI-powered applications, and tools that make complex data easier to work with. My recent work focuses on Python,
+        SQL, LLM integration, and database-aware analysis.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+        <a class="btn secondary" href="https://github.com/ywxn" target="_blank" rel="noreferrer">View GitHub ↗</a>
+        <a class="btn secondary" href="mailto:nmtroeger@gmail.com">Email me ↗</a>
+      </div>
+      <div class="meta">
+        <span>B.A. Computer Science</span>
+        <span>B.A. Economics</span>
+        <span>Whitman College, 2025</span>
+      </div>
+    </header>
 
-    <section>
-        <h2>Projects</h2>
-        
-        <ul>
-            <li>
-                <h3>Reel Equality: Quantifying Gender Representation In Film with The Bechdel Test</h3>
-                <p>This project involved creating a neural net to calculate whether a movie would pass the Bechdel test or not based on input data, as well as sentiment analysis and data representation.</p>
-                <a href="https://github.com/erinjar/BigDataFinalProject">GitHub Repository</a>
-            </li>
+    <section class="wrap" id="projects">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Selected work</div>
+          <h2>Projects & experience</h2>
+          <p class="section-sub">Selected professional, personal, and academic work. Confidential work is described at a
+            high level; repository links are shown only when available.</p>
+        </div>
+      </div>
 
-            <li>
-                <h3>Flowers on the Moon</h3>
-                <p>This was my final project for my game development class. It was meant to be an arena-style shooter based on Devil Daggers and Vampire Survivors.</p>
-                <a href="https://github.com/ywxn/fotm">GitHub Repository</a>
-            </li>
+      <div class="grid">
+        <article class="project featured reveal">
+          <div class="project-top"><span class="kind">Professional · AI / Backend</span><span class="status">In
+              development</span></div>
+          <div class="project-layout">
+            <div>
+              <h3>Darashaw — Portfolio Analytics</h3>
+              <p>Developing a modular Python engine that uses Anthropic to translate natural-language questions into
+                SQL and perform automated, multidimensional data analysis. Built separate components for LLM
+                integration, SQL generation and validation, database metadata management, and analytical operations,
+                designed for integration into a larger application.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Anthropic
+                  API</span><span class="tag">LLM Integration</span><span class="tag">Data Analysis</span></div>
+            </div>
+            <div>
+              <p><strong>Focus</strong><br>Bridging natural-language requests and structured data while keeping query
+                generation and validation as distinct, testable components.</p>
+              <div class="project-links"><span class="status">Confidential professional work · No public code or
+                  demo</span></div>
+            </div>
+          </div>
+        </article>
 
-            <li>
-                <h3>Music Time</h3>
-                <p>This was a midterm project for my game development class. I focused on coding while my partners worked on animations and level design.</p>
-                <a href="https://github.com/imvahn/2DPlatformerProject">GitHub Repository</a>
-            </li>
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Professional · Desktop software</span><span
+              class="status">2026</span></div>
+          <h3>Write Frame Communications — Data Workspace</h3>
+          <p>Built a full-stack desktop application in Python and Qt6 for asking natural-language questions of
+            relational databases. A shared SQLAlchemy interface supports PostgreSQL, MySQL, SQLite, SQL Server,
+            and Oracle. I implemented semantic table retrieval with embeddings and foreign-key graph traversal, a
+            multi-agent workflow, and SQL safety checks before execution.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Qt6</span><span
+              class="tag">SQLAlchemy</span><span class="tag">Embeddings</span><span class="tag">PostgreSQL</span></div>
+          <div class="project-links"><span class="status">Write Frame Communications · Private work, no public
+              repository</span>
+          </div>
+        </article>
 
-            <li>
-                <h3>Slime Jump</h3>
-                <p>This project was created over two days during a game jam in my game development class about two weeks into the semester.</p>
-                <a href="https://github.com/ywxn/GameJam">GitHub Repository</a>
-            </li>
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Team project · Audio software</span></div>
+          <h3>Project Saturn — Audio Library</h3>
+          <p>A team-built Python app for managing playlists and editing audio through a CLI and Tkinter interface. I
+            implemented the CLI, GUI backend, and DBSCAN clustering, which groups files using standardized MFCC audio
+            features rather than assigning genre labels. I also wrote CLI tests.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span
+              class="tag">DBSCAN</span><span class="tag">Librosa / MFCC</span><span class="tag">MySQL</span></div>
+          <div class="project-links"><a class="text-link" href="https://github.com/gomezc08/Saturn-Sound-Archive"
+              target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
 
-            <li>
-                <h3>Weighted Random Selection Optimization</h3>
-                <p>This project, part of the DENSE project at Whitman College, focused on optimizing the speed at which weighted random selection was performed for a software optimization class.</p>
-                <a href="https://github.com/ywxn/wrsOpti">GitHub Repository</a>
-            </li>
-        </ul>
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Professional experience · Data analysis</span><span
+              class="status">Jan–Sep 2024</span></div>
+          <h3>Communities in Schools of the Blue Mountain Region</h3>
+          <p>As a Data Analyst Intern, I developed reproducible Python pipelines to clean, transform, validate, and
+            analyze organizational datasets. I automated recurring workflows to improve consistency and reduce
+            manual analysis; my work supported reporting and grant-application analysis. Work was NDA-protected.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span><span class="tag">Data Validation</span><span
+              class="tag">Reporting</span>
+          </div>
+          <div class="project-links"><span class="status">NDA-protected internship · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Web app · LLM integration</span></div>
+          <h3>AI-Powered Notetaker</h3>
+          <p>A web application for generating and organizing notes from documents and source material. Includes a Flask
+            backend, OpenAI API integration, PDF/DOCX processing, and OCR for image-based content.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span
+              class="tag">JavaScript</span><span class="tag">OpenAI API</span><span class="tag">OCR</span></div>
+          <div class="project-links"><span class="status">Course project · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Systems · C</span></div>
+          <h3>Dynamic Memory Allocator</h3>
+          <p>Implemented a free-list-based allocator with aligned blocks, boundary tags, coalescing, and allocation,
+            free, and reallocation paths. The work applies heap-layout and memory-management concepts in C.</p>
+          <div class="tags"><span class="tag">C</span><span class="tag">Computer Systems</span><span class="tag">Memory
+              Management</span></div>
+          <div class="project-links"><span class="status">Course project · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Systems · Cache behavior</span></div>
+          <h3>Cache Lab</h3>
+          <p>A C systems lab combining a trace-driven cache simulator with a cache-aware matrix transpose. My transpose
+            submission uses blocking and a separate strategy for 64×64 matrices to limit cache conflicts; the simulator
+            source includes course scaffolding.</p>
+          <div class="tags"><span class="tag">C</span><span class="tag">Cache Locality</span><span
+              class="tag">LRU</span><span class="tag">Performance Analysis</span></div>
+          <div class="project-links"><span class="status">Course project · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Graphics · C#</span></div>
+          <h3>Ray Tracer</h3>
+          <p>A sequence of C# graphics assignments that casts rays through pixels, tests sphere, plane, and cube
+            intersections, computes ambient and diffuse lighting, and writes PPM images.</p>
+          <div class="tags"><span class="tag">C#</span><span class="tag">Computer Graphics</span><span class="tag">Ray
+              Tracing</span><span class="tag">Linear Algebra</span></div>
+          <div class="project-links"><span class="status">Course project · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Systems · Optimization</span></div>
+          <h3>Weighted Random Selection Optimization</h3>
+          <p>Explored performance optimizations for weighted random selection as part of Whitman College’s DENSE
+            project, applying algorithmic reasoning to a concrete software-performance problem.</p>
+          <div class="tags"><span class="tag">C++</span><span class="tag">Algorithms</span><span
+              class="tag">Performance</span></div>
+          <div class="project-links"><a class="text-link" href="https://github.com/ywxn/wrsOpti" target="_blank"
+              rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Academic · Theory of computation</span></div>
+          <h3>Pushdown Automaton Simulator</h3>
+          <p>Implemented a simulator for pushdown automata, including state transitions, stack operations, and
+            acceptance conditions for input strings.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Data Structures</span><span
+              class="tag">Automata Theory</span></div>
+          <div class="project-links"><span class="status">Course project · No public repository</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Academic · Data science</span></div>
+          <h3>Reel Equality: The Bechdel Test</h3>
+          <p>A collaborative big-data project exploring gender representation in film through the Bechdel test, with a
+            neural-network classification component, sentiment analysis, and data visualization.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Neural Networks</span><span
+              class="tag">Sentiment Analysis</span><span class="tag">NLP</span><span class="tag">Data
+              Visualization</span></div>
+          <div class="project-links"><a class="text-link" href="https://github.com/erinjar/BigDataFinalProject"
+              target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Game development · Unity</span></div>
+          <h3>Flowers on the Moon</h3>
+          <p>An arena-style shooter inspired by games such as Devil Daggers and Vampire Survivors, developed as a final
+            project for a game-development course.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Game
+              Development</span></div>
+          <div class="project-links"><a class="text-link" href="https://github.com/ywxn/fotm" target="_blank"
+              rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Game development · Team project</span></div>
+          <h3>2D Platformer</h3>
+          <p>A collaborative 2D platformer project created for a game-development course, with a focus on programming
+            alongside teammates working on animation and level design.</p>
+          <div class="tags"><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">Game
+              Programming</span></div>
+          <div class="project-links"><a class="text-link" href="https://github.com/imvahn/2DPlatformerProject"
+              target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Game jam · Unity</span></div>
+          <h3>Slime Jump</h3>
+          <p>A small game-jam project built over two days early in a game-development course.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Game Jam</span>
+          </div>
+          <div class="project-links"><a class="text-link" href="https://github.com/ywxn/GameJam" target="_blank"
+              rel="noreferrer">View repository <span>↗</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top"><span class="kind">Data science · Academic</span></div>
+          <h3>Computational Data Analysis</h3>
+          <p>Coursework applying Python data-processing pipelines, ETL-style workflows, exploratory analysis,
+            statistical methods, visualization, and machine-learning evaluation to structured datasets.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span
+              class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">Jupyter</span></div>
+          <div class="project-links"><span class="status">Coursework · No public repository</span></div>
+        </article>
+
+      </div>
     </section>
 
-    <footer>
-        <p>For optimal experience, open GitHub links using desktop mode if on mobile.</p>
-    </footer>
+    <section class="wrap" id="about">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">A little about me</div>
+          <h2>Software, data, and systems</h2>
+          <p class="section-sub">I enjoy projects where careful engineering and analytical thinking meet.</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="info-panel">
+          <h3>What I’ve been working with</h3>
+          <p>My recent professional work centers on Python applications that connect LLMs to structured data. I’m also
+            interested in software performance, lower-level programming, and building a stronger foundation in systems.
+          </p>
+          <div class="skill-list">
+            <span class="skill">Python</span><span class="skill">SQL</span><span class="skill">C / C++</span><span
+              class="skill">Rust</span><span class="skill">TypeScript</span><span class="skill">Qt6</span><span
+              class="skill">SQLAlchemy</span><span class="skill">LLM APIs</span><span
+              class="skill">Embeddings</span><span class="skill">Git</span>
+          </div>
+        </div>
+        <div class="info-panel">
+          <h3>Education</h3>
+          <p><strong>Whitman College</strong><br>B.A. in Computer Science and B.A. in Economics, 2025<br><br>Relevant
+            study includes data structures and algorithms, computer systems, software design and optimization, theory of
+            computation, applied machine learning, econometrics, and linear algebra.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="wrap" id="contact">
+      <div class="contact reveal">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Let’s build something useful.</h2>
+        <p>I’m interested in software engineering, AI applications, data-intensive tools, and opportunities to keep
+          growing as a developer.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:nmtroeger@gmail.com">nmtroeger@gmail.com ↗</a>
+          <a class="btn secondary" href="https://github.com/ywxn" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/ntroeger" target="_blank" rel="noreferrer">LinkedIn
+            ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Neel Troeger</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
